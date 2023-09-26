@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Inclui um arquivo CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Pré-conecta ao serviço de fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Importa uma fonte do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <!-- Inclui um arquivo JavaScript externo -->
+    <script src="scripts.js"></script>
+    <!-- Define o título da página -->
+    <title>Previsão do Tempo</title>
+</head>
+
+<body>
+
+    <div class="caixa-maior">
+
+        <!-- Campo de entrada de texto para a cidade -->
+        <input class="input-cidade" placeholder="Digite o nome da cidade">
+        <!-- Botão de pesquisa -->
+        <button onclick="cliqueiNoBotao()">
+            <!-- Ícone de lupa -->
+            <img class="lupa" src="https://www.svgrepo.com/show/488200/find.svg">
+        </button>
+
+        <div class="caixa-media">
+            <!-- Título da cidade -->
+            <h2 class="cidade">Digite o Local para ver o clima</h2>
+            <!-- Temperatura -->
+            <p class="temp">    </p>
+
+            <div class="caixa-menor">
+                <!-- Ícone de condição do tempo -->
+                <img class="icone" src="https://openweathermap.org/img/wn/04n.png">
+                <!-- Descrição da condição do tempo -->
+                <p class="descricao"></p>
+            </div>
+
+            <!-- Umidade -->
+            <p class="umidade"></p>
+        </div>
+
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <!-- Texto de direitos autorais -->
+        <p>&copy; 2023 FECAP</p>
+    </footer>
+
+</body>
+
+</html>
